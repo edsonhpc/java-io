@@ -12,9 +12,10 @@ import java.io.PrintWriter;
  * 	 - È também uma classe de mais alto nível, que aceita uma grande variedade de construtores, como é o caso do new File.
  *   - Antigamente não existia os Writers e Readers eles foram criados após o Stream.
  *   
- * - PrintWriter é parecido com o PrintStream e já possui vários métodos para imprimir qualquer tipo de dados.
+ * - PrintWriter é parecido com o PrintStream e já possui vários métodos para imprimir qualquer tipo de dados. 
+ *	 - PrintWriter oferece alguns métodos adicionais de formatação, como o println, printf enquanto FileWrite possui um conjunto básico de métodos.
  */
-public class TesteEscritaPrintStream {
+public class TesteEscritaPrintStreamPrintWriter {
 
 	public static void main(String[] args) throws IOException {
 		 

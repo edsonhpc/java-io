@@ -27,7 +27,6 @@ public class TesteEscritaFileWrite {
         bw.write("Edson developer");
 		
 		bw.close(); 
-		
 		long fim = System.currentTimeMillis();
 		System.out.println("Passaram " + (fim - ini) + " milissegundos");
 	}

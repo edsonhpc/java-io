@@ -21,13 +21,16 @@ import java.util.StringTokenizer;
  * - Documentação classe String.format: 
  * 	 - https://docs.oracle.com/javase/tutorial/java/data/numberformat.html
  *   - https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
+ *   
+ *   - Ao abrirmos um arquivo temos um fluxo de entrada de bits e bytes que é tranformado em um texto, neste momento
+ *     é aplicado um Charset. Nos é dada a possibilidade de defini-lo de modo a melhor servir ao nosso programa.
  */
 public class TesteLeituraScanner {
 
 	public static void main(String[] args) throws Exception {
 	
 		// Estabelecendo a entrada do arquivo
-		Scanner scanner = new Scanner(new File("contas.csv"));
+		Scanner scanner = new Scanner(new File("contas.csv"), "ISO-8859-1"); // Passo a definição do charset na instanciação da classe Scanner
 		
 		while(scanner.hasNextLine()) { // Laço para verificar se tem próxima linha
 			String linha = scanner.nextLine(); // Pŕoxima linha

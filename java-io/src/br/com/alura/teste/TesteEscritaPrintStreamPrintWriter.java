@@ -21,9 +21,10 @@ public class TesteEscritaPrintStreamPrintWriter {
 		 
 		// Estabelecendo o fluxo de saída
 		PrintWriter pw = new PrintWriter("lorem.txt"); // Funciona de forma similar, no entanto essa classe é um Write.
-		PrintStream ps = new PrintStream("lorem.txt"); // Lançado na primeira versão do java somente depois entrou o Write e Reader.
+		PrintStream ps = new PrintStream("lorem.txt", "UTF-8"); // Lançado na primeira versão do java somente depois entrou o Write e Reader.
 		
-        ps.println("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod");
+		// Usando PrintStream
+        ps.println("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod çé");
         ps.println();
         ps.print("Edson master developer");
 		
